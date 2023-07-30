@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+/*body*/
+body {
+  font-family: roboto;
+  padding: 20px;
+  /*background: #f1f1f1*/
+  background-size:1540px
+}
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  padding-left: 20px;
+}
+
+/*profile image*/
+.roundimage {
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  border: 2px solid gray;
+  box-shadow: 0px 0px 15px 0 rgba(64, 168, 97,0.5);
+  /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  transition: top .2s ease-in-out,width .5s,height .5s;
+}
+
+.roundimage:hover {
+  position:center;
+  background-color:black;
+  width: 250px;
+  height:250px;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*card effect*/
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border:2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  }
+
+/*cgpa marks*/
+.cgpa
+{
+	float:right;
+    margin-right: 30px;
+
+}
+
+/*line for marks*/
+.vertical-line {
+      border-left: 2px solid black;
+      height: 80px; /* Adjust the height as needed */
+	  float:right;
+	  margin-right: 30px;
+    }
+
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-light-green,.w3-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
+.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
+.w3-container{margin-top:16px;margin-bottom:16px; text-align:center;}
+.w3-teal,.w3-hover-teal:hover
+{color:#fff!important;
+background-color:#009688!important
+}
+
+ .w3-text-teal,.w3-hover-text-teal:hover{color:#009688}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: teal;
+  margin-top: 20px;
+  color:white;
+  border:2px solid black;
+}
+
+/*footer logo color*/
+.footer a{
+	color:white;
+} 
+
+/*links logo color*/
+.leftcolumn a{
+	color:teal;
+}
+
+/*icons style*/
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
